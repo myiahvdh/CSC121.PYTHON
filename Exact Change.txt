@@ -1,0 +1,71 @@
+Write a program with total change amount as an integer input, and output the change using the fewest coins, one coin type per line. End each line with a newline. The coin types are dollars, quarters, dimes, nickels, and pennies. Use singular and plural coin names as appropriate, like 1 penny vs. 2 pennies.
+
+Coral Code:
+
+// Name: Myiah Vanderheyden
+// LAB 3.12:  Exact Change
+
+integer dollar
+integer quarter
+integer dime
+integer nickel
+integer penny
+integer numChange
+integer remainder
+
+numChange = Get next input
+
+if numChange <= 0
+   Put "no change\n" to output
+   
+elseif numChange > 0
+   dollar = numChange / 100
+   numChange = numChange % 100
+   
+   quarter = numChange / 25
+   numChange = numChange % 25
+   
+   dime = numChange / 10
+   numChange = numChange % 10
+   
+   nickel = numChange / 5
+   numChange = numChange % 5
+   
+   penny = numChange / 1
+   numChange = numChange % 1
+   
+   if dollar == 1
+      Put dollar to output
+      Put " dollar\n" to output
+   elseif dollar >= 1
+      Put dollar to output
+      Put " dollars\n" to output
+   
+   if quarter == 1
+      Put quarter to output
+      Put " quarter\n" to output
+   elseif quarter >= 1
+      Put quarter to output
+      Put " quarters\n" to output  
+
+   if dime == 1
+      Put dime to output
+      Put " dime\n" to output
+   elseif dime >= 1
+      Put dime to output
+      Put " dimes\n" to output  
+
+   if nickel == 1
+      Put nickel to output
+      Put " nickel\n" to output
+   elseif nickel >= 1
+      Put nickel to output
+      Put " nickels\n" to output 
+
+   if penny == 1
+      Put penny to output
+      Put " penny\n" to output
+   elseif penny >= 1
+      Put penny to output
+      Put " pennies\n" to output 
+   
